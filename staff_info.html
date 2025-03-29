@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Information</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+            width: 100%;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .staff-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .staff-table th,
+        .staff-table td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 12px;
+        }
+        
+        .staff-table th {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+        }
+        
+        .staff-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .staff-table tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="admin_data.html" class="navbar-link">Home</a></li>
+            <li><a href="staff_info.html" class="navbar-link">Staff Information</a></li>
+            <li>
+                <a href="customer_info.html" class="navbar-link">Customer Information</a>
+            </li>
+            <li>
+                <a href="flight_detail.html" class="navbar-link">Flight Details</a>
+            </li>
+            <li>
+                <a href="edit.html" class="navbar-link">Edit Details</a>
+            </li>
+            <li>
+                <a href="home.html" class="navbar-link">Logout</a>
+            </li>
+
+
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Staff Information</h2>
+        <table class="staff-table">
+            <thead>
+                <tr>
+                    <th>Staff ID</th>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Department</th>
+                    <th>Contact</th>
+                    <th>Salary</th>
+                    <th>Joining Date</th>
+                    <th>Shift Timing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ST001</td>
+                    <td>John Doe</td>
+                    <td>Manager</td>
+                    <td>Operations</td>
+                    <td>+1 234 567 8901</td>
+                    <td>$70,000</td>
+                    <td>2020-01-15</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+                <tr>
+                    <td>ST002</td>
+                    <td>Jane Smith</td>
+                    <td>Customer Support</td>
+                    <td>Customer Service</td>
+                    <td>+1 987 654 3210</td>
+                    <td>$45,000</td>
+                    <td>2019-06-10</td>
+                    <td>10 AM - 6 PM</td>
+                </tr>
+                <tr>
+                    <td>ST003</td>
+                    <td>Michael Brown</td>
+                    <td>Software Engineer</td>
+                    <td>IT</td>
+                    <td>+1 567 890 1234</td>
+                    <td>$80,000</td>
+                    <td>2021-03-20</td>
+                    <td>11 AM - 7 PM</td>
+                </tr>
+                <tr>
+                    <td>ST004</td>
+                    <td>Emily Davis</td>
+                    <td>Finance Executive</td>
+                    <td>Finance</td>
+                    <td>+1 678 345 9876</td>
+                    <td>$60,000</td>
+                    <td>2018-08-15</td>
+                    <td>8 AM - 4 PM</td>
+                </tr>
+                <tr>
+                    <td>ST005</td>
+                    <td>Chris Wilson</td>
+                    <td>HR Specialist</td>
+                    <td>Human Resources</td>
+                    <td>+1 345 678 1234</td>
+                    <td>$50,000</td>
+                    <td>2022-01-05</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+                <tr>
+                    <td>ST006</td>
+                    <td>Laura Martinez</td>
+                    <td>Ticketing Agent</td>
+                    <td>Ticketing</td>
+                    <td>+1 456 789 0123</td>
+                    <td>$40,000</td>
+                    <td>2020-07-25</td>
+                    <td>12 PM - 8 PM</td>
+                </tr>
+                <tr>
+                    <td>ST007</td>
+                    <td>David Taylor</td>
+                    <td>Security Officer</td>
+                    <td>Security</td>
+                    <td>+1 789 012 3456</td>
+                    <td>$38,000</td>
+                    <td>2017-10-30</td>
+                    <td>6 AM - 2 PM</td>
+                </tr>
+                <tr>
+                    <td>ST008</td>
+                    <td>Sophia Lee</td>
+                    <td>Cabin Crew</td>
+                    <td>Flight Operations</td>
+                    <td>+1 890 123 4567</td>
+                    <td>$55,000</td>
+                    <td>2019-12-01</td>
+                    <td>10 AM - 6 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

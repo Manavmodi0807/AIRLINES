@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Center content for Dashboard page */
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+        
+        .dashboard-container {
+            text-align: center;
+        }
+        
+        .btn {
+            padding: 20px 40px;
+            font-size: 24px;
+            margin: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            cursor: pointer;
+            width: 250px;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        /* Optional styling for the heading */
+        
+        .heading {
+            font-family: 'Pacifico', cursive;
+            color: #007bff;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="home.html" class="navbar-link">Home</a></li>
+            <li><a href="login_check.html" class="navbar-link">Login</a></li>
+            <li><a href="support.html" class="navbar-link">Support</a></li>
+
+            <li class="right-link"><a href="about.html" class="navbar-link">About Us</a></li>
+
+
+        </ul>
+    </nav>
+    <div class="dashboard-container">
+        <h1 class="heading">Please Choose Your Role</h1>
+        <a href="admin.html" class="btn">Admin</a>
+        <a href="user.html" class="btn">User</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .customer-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .customer-table th,
+        .customer-table td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 12px;
+        }
+        
+        .customer-table th {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+        }
+        
+        .customer-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .customer-table tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="admin_data.html" class="navbar-link">Home</a></li>
+            <li><a href="staff_info.html" class="navbar-link">Staff Information</a></li>
+            <li>
+                <a href="customer_info.html" class="navbar-link">Customer Information</a>
+            </li>
+            <li>
+                <a href="flight_detail.html" class="navbar-link">Flight Details</a>
+            </li>
+            <li>
+                <a href="edit.html" class="navbar-link">Edit Details</a>
+            </li>
+            <li>
+                <a href="home.html" class="navbar-link">Logout</a>
+            </li>
+
+
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Customer Details</h2>
+        <table class="customer-table">
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                    <th>Booking ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CUST001</td>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>+1 234 567 8901</td>
+                    <td>123 Main St, New York, USA</td>
+                    <td>BK001</td>
+                </tr>
+                <tr>
+                    <td>CUST002</td>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@example.com</td>
+                    <td>+1 987 654 3210</td>
+                    <td>456 Elm St, Los Angeles, USA</td>
+                    <td>BK002</td>
+                </tr>
+                <tr>
+                    <td>CUST003</td>
+                    <td>Michael Brown</td>
+                    <td>michael.brown@example.com</td>
+                    <td>+1 567 890 1234</td>
+                    <td>789 Oak St, Chicago, USA</td>
+                    <td>BK003</td>
+                </tr>
+                <tr>
+                    <td>CUST004</td>
+                    <td>Emily Davis</td>
+                    <td>emily.davis@example.com</td>
+                    <td>+1 678 345 9876</td>
+                    <td>321 Pine St, Miami, USA</td>
+                    <td>BK004</td>
+                </tr>
+                <tr>
+                    <td>CUST005</td>
+                    <td>Chris Wilson</td>
+                    <td>chris.wilson@example.com</td>
+                    <td>+1 345 678 1234</td>
+                    <td>654 Maple St, Boston, USA</td>
+                    <td>BK005</td>
+                </tr>
+                <tr>
+                    <td>CUST006</td>
+                    <td>Laura Martinez</td>
+                    <td>laura.martinez@example.com</td>
+                    <td>+1 456 789 0123</td>
+                    <td>876 Birch St, San Francisco, USA</td>
+                    <td>BK006</td>
+                </tr>
+                <tr>
+                    <td>CUST007</td>
+                    <td>David Taylor</td>
+                    <td>david.taylor@example.com</td>
+                    <td>+1 789 012 3456</td>
+                    <td>234 Cedar St, Seattle, USA</td>
+                    <td>BK007</td>
+                </tr>
+                <tr>
+                    <td>CUST008</td>
+                    <td>Sophia Lee</td>
+                    <td>sophia.lee@example.com</td>
+                    <td>+1 890 123 4567</td>
+                    <td>987 Palm St, Orlando, USA</td>
+                    <td>BK008</td>
+                </tr>
+                <tr>
+                    <td>CUST009</td>
+                    <td>James Anderson</td>
+                    <td>james.anderson@example.com</td>
+                    <td>+1 234 567 8910</td>
+                    <td>543 Spruce St, Austin, USA</td>
+                    <td>BK009</td>
+                </tr>
+                <tr>
+                    <td>CUST010</td>
+                    <td>Olivia Hernandez</td>
+                    <td>olivia.hernandez@example.com</td>
+                    <td>+1 123 456 7890</td>
+                    <td>123 Willow St, Denver, USA</td>
+                    <td>BK010</td>
+                </tr>
+                <tr>
+                    <td>CUST011</td>
+                    <td>Matthew Jackson</td>
+                    <td>matthew.jackson@example.com</td>
+                    <td>+1 098 765 4321</td>
+                    <td>456 Cypress St, Dallas, USA</td>
+                    <td>BK011</td>
+                </tr>
+                <tr>
+                    <td>CUST012</td>
+                    <td>Emma Gonzalez</td>
+                    <td>emma.gonzalez@example.com</td>
+                    <td>+1 567 890 4321</td>
+                    <td>789 Redwood St, Houston, USA</td>
+                    <td>BK012</td>
+                </tr>
+                <tr>
+                    <td>CUST013</td>
+                    <td>Alexander Lopez</td>
+                    <td>alexander.lopez@example.com</td>
+                    <td>+1 234 678 9012</td>
+                    <td>321 Aspen St, Phoenix, USA</td>
+                    <td>BK013</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

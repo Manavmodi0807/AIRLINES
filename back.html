@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        h2 {
+            color: #0056b3;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 12px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="user_data.html" class="navbar-link">Home</a></li>
+            <li><a href="booking.html" class="navbar-link">Booking</a></li>
+            <li>
+                <a href="ticket_cancel.html" class="navbar-link">Ticket Cancellation</a>
+            </li>
+            <li>
+                <a href="support1.html" class="navbar-link">Support</a>
+            </li>
+            <li>
+                <a href="home.html" class="navbar-link">Logout</a>
+            </li>
+            <li class="right-link"><a href="about.html" class="navbar-link">About Us</a></li>
+
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Your Ticket is Confirmed!</h2>
+        <p>Your booking has been successfully completed. Please check your email for the ticket details.</p>
+        <a href="user_data.html"><button class="btn">Go Back</button></a>
+
+    </div>
+
+</body>
+
+</html>

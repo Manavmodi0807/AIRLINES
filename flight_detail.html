@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Information</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .plane-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .plane-table th,
+        .plane-table td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 12px;
+        }
+        
+        .plane-table th {
+            background-color: #007BFF;
+            color: white;
+        }
+        
+        .plane-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .plane-table tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="admin_data.html" class="navbar-link">Home</a></li>
+            <li><a href="staff_info.html" class="navbar-link">Staff Information</a></li>
+            <li>
+                <a href="customer_info.html" class="navbar-link">Customer Information</a>
+            </li>
+            <li>
+                <a href="flight_detail.html" class="navbar-link">Flight Details</a>
+            </li>
+            <li>
+                <a href="edit.html" class="navbar-link">Edit Details</a>
+            </li>
+            <li>
+                <a href="home.html" class="navbar-link">Logout</a>
+            </li>
+
+
+
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Plane Information</h2>
+        <table class="plane-table">
+            <thead>
+                <tr>
+                    <th>Plane Number</th>
+                    <th>Pilot Name</th>
+                    <th>Route</th>
+                    <th>Capacity</th>
+                    <th>Airline</th>
+                    <th>Flight Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PL001</td>
+                    <td>John Smith</td>
+                    <td>New York - London</td>
+                    <td>300</td>
+                    <td>British Airways</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>PL002</td>
+                    <td>Mary Johnson</td>
+                    <td>Delhi - Mumbai</td>
+                    <td>180</td>
+                    <td>Air India</td>
+                    <td>Delayed</td>
+                </tr>
+                <tr>
+                    <td>PL003</td>
+                    <td>James Brown</td>
+                    <td>Dubai - Sydney</td>
+                    <td>400</td>
+                    <td>Emirates</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>PL004</td>
+                    <td>Emily Davis</td>
+                    <td>Paris - Tokyo</td>
+                    <td>220</td>
+                    <td>Air France</td>
+                    <td>Cancelled</td>
+                </tr>
+                <tr>
+                    <td>PL005</td>
+                    <td>Michael Lee</td>
+                    <td>San Francisco - Honolulu</td>
+                    <td>150</td>
+                    <td>United Airlines</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>PL006</td>
+                    <td>Sophia Wilson</td>
+                    <td>Beijing - Moscow</td>
+                    <td>320</td>
+                    <td>China Airlines</td>
+                    <td>Delayed</td>
+                </tr>
+                <tr>
+                    <td>PL007</td>
+                    <td>Chris Martin</td>
+                    <td>Los Angeles - Vancouver</td>
+                    <td>250</td>
+                    <td>WestJet</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>PL008</td>
+                    <td>Olivia Taylor</td>
+                    <td>Rome - Istanbul</td>
+                    <td>280</td>
+                    <td>Turkish Airlines</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>PL009</td>
+                    <td>Daniel White</td>
+                    <td>Berlin - Zurich</td>
+                    <td>200</td>
+                    <td>Lufthansa</td>
+                    <td>Delayed</td>
+                </tr>
+                <tr>
+                    <td>PL010</td>
+                    <td>Emma Roberts</td>
+                    <td>Madrid - Lisbon</td>
+                    <td>160</td>
+                    <td>Iberia</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>PL011</td>
+                    <td>Noah Harris</td>
+                    <td>Chicago - Miami</td>
+                    <td>190</td>
+                    <td>American Airlines</td>
+                    <td>Cancelled</td>
+                </tr>
+                <tr>
+                    <td>PL012</td>
+                    <td>Isabella Clark</td>
+                    <td>Bangkok - Phuket</td>
+                    <td>220</td>
+                    <td>Thai Airways</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>PL013</td>
+                    <td>Liam Walker</td>
+                    <td>Sydney - Auckland</td>
+                    <td>210</td>
+                    <td>Qantas</td>
+                    <td>On Time</td>
+                </tr>
+                <tr>
+                    <td>PL014</td>
+                    <td>Ava Adams</td>
+                    <td>Seoul - Singapore</td>
+                    <td>290</td>
+                    <td>Singapore Airlines</td>
+                    <td>Delayed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Seat Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        .container {
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section {
+            margin: 20px;
+            text-align: center;
+        }
+        
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        
+        .seat-row {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        
+        .seat {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            background-color: #dcdcdc;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .secc {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .sec {
+            margin: 20px;
+        }
+        
+        .seat.taken {
+            background-color: #ff6961;
+        }
+        
+        .seat.empty {
+            background-color: #77dd77;
+        }
+        
+        .seat.vip {
+            border: 2px solid gold;
+        }
+        
+        .legend {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .legend div {
+            display: flex;
+            align-items: center;
+        }
+        
+        .legend span {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            display: inline-block;
+        }
+        
+        .legend .empty-seat {
+            background-color: #77dd77;
+        }
+        
+        .legend .taken-seat {
+            background-color: #ff6961;
+        }
+        
+        .legend .vip-seat {
+            background-color: #77dd77;
+            border: 2px solid gold;
+        }
+        
+        button {
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="user_data.html" class="navbar-link">Home</a></li>
+            <li><a href="booking.html" class="navbar-link">Booking</a></li>
+            <li>
+                <a href="ticket_cancel.html" class="navbar-link">Ticket Cancellation</a>
+            </li>
+            <li>
+                <a href="support1.html" class="navbar-link">Support</a>
+            </li>
+            <li>
+                <a href="home.html" class="navbar-link">Logout</a>
+            </li>
+
+            <li class="right-link"><a href="about.html" class="navbar-link">About Us</a></li>
+
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- VIP Section -->
+
+        <div class="section">
+            <h3>VIP Section</h3>
+            <div class="secc">
+                <div class="sec">
+                    <div class="seat-row">
+                        <div class="seat vip empty">A1</div>
+                        <div class="seat vip taken">A2</div>
+                        <div class="seat vip empty">A3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat vip empty">B1</div>
+                        <div class="seat vip taken">B2</div>
+                        <div class="seat vip empty">B3</div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat vip empty">A1</div>
+                        <div class="seat vip taken">A2</div>
+                        <div class="seat vip empty">A3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat vip empty">B1</div>
+                        <div class="seat vip taken">B2</div>
+                        <div class="seat vip empty">B3</div>
+                    </div>
+
+                </div>
+                <div class="sec">
+                    <div class="seat-row">
+                        <div class="seat vip empty">A1</div>
+                        <div class="seat vip taken">A2</div>
+                        <div class="seat vip empty">A3</div>
+                        <div class="seat vip taken">A4</div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat vip empty">B1</div>
+                        <div class="seat vip taken">B2</div>
+                        <div class="seat vip empty">B3</div>
+                        <div class="seat vip empty">B4</div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat vip empty">A1</div>
+                        <div class="seat vip taken">A2</div>
+                        <div class="seat vip empty">A3</div>
+                        <div class="seat vip taken">A4</div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat vip empty">B1</div>
+                        <div class="seat vip taken">B2</div>
+                        <div class="seat vip empty">B3</div>
+                        <div class="seat vip empty">B4</div>
+                    </div>
+
+                </div>
+                <div class="sec">
+                    <div class="seat-row">
+                        <div class="seat vip empty">A1</div>
+                        <div class="seat vip taken">A2</div>
+                        <div class="seat vip empty">A3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat vip empty">B1</div>
+                        <div class="seat vip taken">B2</div>
+                        <div class="seat vip empty">B3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat vip empty">A1</div>
+                        <div class="seat vip taken">A2</div>
+                        <div class="seat vip empty">A3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat vip empty">B1</div>
+                        <div class="seat vip taken">B2</div>
+                        <div class="seat vip empty">B3</div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- General Section -->
+        <div class="section">
+            <h3>General Section</h3>
+            <div class="secc">
+                <div class="sec">
+                    <div class="seat-row">
+                        <div class="seat empty">C1</div>
+                        <div class="seat taken">C2</div>
+                        <div class="seat empty">C3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat empty">C1</div>
+                        <div class="seat taken">C2</div>
+                        <div class="seat empty">C3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+
+                    </div>
+
+                </div>
+                <div class="sec">
+                    <div class="seat-row">
+                        <div class="seat empty">C1</div>
+                        <div class="seat taken">C2</div>
+                        <div class="seat empty">C3</div>
+                        <div class="seat taken">C4</div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+                        <div class="seat taken">D4</div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+                        <div class="seat taken">D4</div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat empty">C1</div>
+                        <div class="seat taken">C2</div>
+                        <div class="seat empty">C3</div>
+                        <div class="seat taken">C4</div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+                        <div class="seat taken">D4</div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+                        <div class="seat taken">D4</div>
+                    </div>
+                </div>
+                <div class="sec">
+                    <div class="seat-row">
+                        <div class="seat empty">C1</div>
+                        <div class="seat taken">C2</div>
+                        <div class="seat empty">C3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat empty">C1</div>
+                        <div class="seat taken">C2</div>
+                        <div class="seat empty">C3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat taken">D1</div>
+                        <div class="seat empty">D2</div>
+                        <div class="seat empty">D3</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bt">
+                <a href="detail.html">
+                    <button>BOOK NOW</button> </a>
+            </div>
+        </div>
+
+
+
+        <div class="legend">
+            <div><span class="empty-seat"></span> Empty Seat</div>
+            <div><span class="taken-seat"></span> Taken Seat</div>
+            <div><span class="vip-seat"></span> VIP Seat</div>
+        </div>
+
+
+    </div>
+    </div>
+    <!-- VIP Section -->
+
+
+
+    <!-- General Section -->
+
+
+
+    <!-- Legend -->
+
+</body>
+
+</html>

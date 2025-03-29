@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Flights - Airplane Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            /* Adjusted container width */
+            box-sizing: border-box;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        
+        .flight-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .flight-item {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        .flight-item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .flight-item-body {
+            margin-bottom: 10px;
+        }
+        
+        .flight-item-body span {
+            font-weight: normal;
+        }
+        
+        .flight-item-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .flight-item-footer button {
+            background-color: #007BFF;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .flight-item-footer button:hover {
+            background-color: #0056b3;
+        }
+        /* Making the source/destination and times appear on the same line */
+        
+        .flight-item-body .flight-details {
+            display: flex;
+            justify-content: space-between;
+        }
+        /* Making sure the layout adjusts on small screens */
+        
+        @media (max-width: 600px) {
+            .flight-item {
+                padding: 15px;
+            }
+            .flight-item-header {
+                font-size: 16px;
+            }
+            .flight-item-footer button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="user_data.html" class="navbar-link">Home</a></li>
+            <li><a href="booking.html" class="navbar-link">Booking</a></li>
+            <li>
+                <a href="ticket_cancel.html" class="navbar-link">Ticket Cancellation</a>
+            </li>
+            <li>
+                <a href="support1.html" class="navbar-link">Support</a>
+            </li>
+            <li>
+                <a href="home.html" class="navbar-link">Logout</a>
+            </li>
+            <li class="right-link"><a href="about.html" class="navbar-link">About Us</a></li>
+
+
+        </ul>
+    </nav>
+
+    <br><br>
+    <div class="container">
+        <h2>Available Flights</h2>
+
+        <div class="flight-list">
+            <!-- Flight 1 -->
+            <div class="flight-item">
+                <div class="flight-item-header">
+                    <span>Flight Number: AI202</span>
+                    <span>Cost: ₹12,000</span>
+                </div>
+                <div class="flight-item-body">
+                    <div class="flight-details">
+                        <span><strong>Source:</strong> New Delhi (DEL)</span>
+                        <span><strong>Destination:</strong> Mumbai (BOM)</span>
+                    </div>
+                    <div class="flight-details">
+                        <span><strong>Departure Time:</strong> 10:00 AM</span>
+                        <span><strong>Arrival Time:</strong> 12:30 PM</span>
+                    </div>
+                </div>
+                <div class="flight-item-footer">
+                    <span><strong>Available Seats:</strong> 15</span>
+                    <!-- Book Now button linked to seat.html -->
+                    <a href="seat.html">
+                        <button type="button">Book Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Flight 2 -->
+            <div class="flight-item">
+                <div class="flight-item-header">
+                    <span>Flight Number: AI305</span>
+                    <span>Cost: ₹15,500</span>
+                </div>
+                <div class="flight-item-body">
+                    <div class="flight-details">
+                        <span><strong>Source:</strong> Bengaluru (BLR)</span>
+                        <span><strong>Destination:</strong> Chennai (MAA)</span>
+                    </div>
+                    <div class="flight-details">
+                        <span><strong>Departure Time:</strong> 2:00 PM</span>
+                        <span><strong>Arrival Time:</strong> 3:30 PM</span>
+                    </div>
+                </div>
+                <div class="flight-item-footer">
+                    <span><strong>Available Seats:</strong> 8</span>
+                    <!-- Book Now button linked to seat.html -->
+                    <a href="seat.html">
+                        <button type="button">Book Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Flight 3 -->
+            <div class="flight-item">
+                <div class="flight-item-header">
+                    <span>Flight Number: AI501</span>
+                    <span>Cost: ₹18,200</span>
+                </div>
+                <div class="flight-item-body">
+                    <div class="flight-details">
+                        <span><strong>Source:</strong> Kolkata (CCU)</span>
+                        <span><strong>Destination:</strong> Hyderabad (HYD)</span>
+                    </div>
+                    <div class="flight-details">
+                        <span><strong>Departure Time:</strong> 7:30 PM</span>
+                        <span><strong>Arrival Time:</strong> 9:00 PM</span>
+                    </div>
+                </div>
+                <div class="flight-item-footer">
+                    <span><strong>Available Seats:</strong> 20</span>
+                    <!-- Book Now button linked to seat.html -->
+                    <a href="seat.html">
+                        <button type="button">Book Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Flight 4 -->
+            <div class="flight-item">
+                <div class="flight-item-header">
+                    <span>Flight Number: AI800</span>
+                    <span>Cost: ₹10,000</span>
+                </div>
+                <div class="flight-item-body">
+                    <div class="flight-details">
+                        <span><strong>Source:</strong> New Delhi (DEL)</span>
+                        <span><strong>Destination:</strong> Ahmedabad (AMD)</span>
+                    </div>
+                    <div class="flight-details">
+                        <span><strong>Departure Time:</strong> 9:00 AM</span>
+                        <span><strong>Arrival Time:</strong> 10:30 AM</span>
+                    </div>
+                </div>
+                <div class="flight-item-footer">
+                    <span><strong>Available Seats:</strong> 12</span>
+                    <!-- Book Now button linked to seat.html -->
+                    <a href="seat.html">
+                        <button type="button">Book Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
